@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwel Design | 福井市越前海岸のweb制作&プログラミング教室</title>
+    <meta name="description" content="はじめまして、Qwel Design (クヴェル・デザイン) と言います。2019年末に福井市越前海岸エリアに移住し、小規模事業者向けweb制作と子供向けプログラミング教室の事業を始めました。">
+    <style>
+      body {
+        margin: 0;
+        color: #333333;
+        font-family: "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      a {
+        color: #333333;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #666666;
+        text-decoration: underline;
+      }
+
+      .coverUnit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .coverSection {
+        width: 24rem;
+        padding: 1.5rem;
+      }
+
+      .content {
+        padding-left: 4.5rem;
+      }
+
+      .note {
+        padding: 1.5rem .75rem;
+        font-size: 14px;
+        text-align: justify;
+      }
+
+      .copyright {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        margin: 3rem auto;
+        text-align: center;
+      }
+
+      .coverAnimation {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #canvas {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coverUnit">
+      <div class="coverSection">
+        <h1 class="siteBrand">
+          <img src="./logo_qweldesign.svg">
+        </h1>
+        <ul class="content">
+          <li><a href="https://github.com/taigoito">制作実績 (GitHub)</a></li>
+          <li><a href="./blog/">鋤と鉋とプログラミング (ブログ)</a></li>
+        </ul>
+        <p class="note">2019年末に町田市から福井市越前海岸エリアに移住しましたが、以降サイトリニューアルができておりませんw</p>
+      </div>
+      <small class="copyright">&copy; 2019 - 2022 Qwel Design</small>
+      <div id="coverAnimation" class="coverAnimation"></div>
+    </div>
+    <script src="./_sketch.js"></script>
+    <script>
+      const elem = document.getElementById('coverAnimation')
+      const sketch = new Sketch(elem);
+      sketch.init();
+    </script>
+  </body>
+</html>
