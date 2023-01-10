@@ -1,0 +1,53 @@
+// Grid System
+
+// ルート要素にて定義
+// これを基準とした1remを、全ての寸法の基本単位とする
+$rootFontSize:   18px;
+$fixedFontSize:  3.84vw; // 4vw以下推奨
+
+// 各BP別用途
+// xs: 1カラム
+// 文字サイズを流動させ、レイアウトを固定
+//
+// sm: 1〜2カラム (下層ページで、メディアと文章の使用くらいに留める)
+// コンテナ幅を拡げ、文字サイズをpxに切り替え固定
+// このサイズのデバイスは少ないため、ほとんどxsのレイアウトを継承する
+// WordPressブロックエディタの都合上、BPを600pxで設置するのが望ましい
+//
+// md: 1〜3カラム
+// 画像:文章を1:2の割合で表示するリストレイアウトが可能
+//
+// lg: 1～4カラム
+// 幅広ラッパー使用時に4カラムレイアウトが可能
+
+// ブレイクポイント (BP)
+$breakpoints:    (
+  sm:              756px, // コンテナ幅720px = 40rem
+  lg:              1008px // コンテナ幅972px = 54rem
+);
+
+$containerPad:   18px;
+
+// BPの配列の接頭辞から値を返す関数
+@function breakpoint($infix: "lg") {
+  @return map-get($breakpoints, $infix);
+}
+
+// グリッド数からコンテナ幅を返す関数
+@function containerWidth($size, $grid: 12) {
+  @return 972px * $size / $grid;
+}
+
+@mixin makeContainer() {
+  position: relative;
+  width: 100%;
+  @each $infix, $breakpoint in $breakpoints {
+    @media (min-width: $breakpoint) {
+      max-width: $breakpoint;
+    }
+  }
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $containerPad;
+  padding-right: $containerPad;
+}

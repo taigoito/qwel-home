@@ -1,0 +1,48 @@
+/**
+ * Layout - Page
+ */
+
+.page {
+  flex: 1 1 720px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+  &__title {
+    @extend %__title;
+  }
+
+  &__heading {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.25rem;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: .25rem;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: radial-gradient(hsl(0, 85%, 92.5%), hsl(0, 85%, 70%));
+    }
+
+    & + p {
+      padding: 0 0.75rem;
+    }
+  }
+
+  &__tableHead {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid themeColor("dark");
+    border-bottom: 0;
+  }
+
+  &__tableContent {
+    margin: 0 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid themeColor("dark");
+    @include smallText();
+  }
+}

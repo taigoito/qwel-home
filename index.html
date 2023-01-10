@@ -1,96 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qwel Design | 福井市越前海岸のweb制作&プログラミング教室</title>
-    <meta name="description" content="はじめまして、Qwel Design (クヴェル・デザイン) と言います。2019年末に福井市越前海岸エリアに移住し、小規模事業者向けweb制作と子供向けプログラミング教室の事業を始めました。">
-    <style>
-      body {
-        margin: 0;
-        color: #333333;
-        font-family: "游ゴシック", "Yu Gothic", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.8;
-      }
-
-      a {
-        color: #333333;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: #666666;
-        text-decoration: underline;
-      }
-
-      .coverUnit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-      }
-
-      .coverSection {
-        width: 24rem;
-        padding: 1.5rem;
-      }
-
-      .content {
-        padding-left: 4.5rem;
-      }
-
-      .note {
-        padding: 1.5rem .75rem;
-        font-size: 14px;
-        text-align: justify;
-      }
-
-      .copyright {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        margin: 3rem auto;
-        text-align: center;
-      }
-
-      .coverAnimation {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-      }
-
-      #canvas {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>クヴェル・デザイン プログラミング教室 - 「つくる」喜びを、子どもたちへ</title>
+    <meta name="description" content="福井市を中心に家庭教師の要領で出張プログラミング教室を開催◆小学生から楽しくプログラミングを体験・学習できます◆さあ、ご一緒にプログラミングをはじめてみませんか？">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="coverUnit">
-      <div class="coverSection">
-        <h1 class="siteBrand">
-          <img src="./logo_qweldesign.svg">
+    <header id="header" class="header">
+      <div class="header__container">
+        <h1 id="siteBrand" class="siteBrand">
+          <a href="/">
+            <span class="siteBrand__small">クヴェル・デザイン</span>
+            <span class="siteBrand__large">プログラミング教室</span>
+          </a>
         </h1>
-        <ul class="content">
-          <li><a href="https://github.com/taigoito">制作実績 (GitHub)</a></li>
-          <li><a href="./blog/">鋤と鉋とプログラミング (ブログ)</a></li>
-          <li><a href="./apps/">お遊び制作 (JavaScript & Processing)</a></li>
-        </ul>
-        <p class="note">2019年末に町田市から福井市越前海岸エリアに移住しましたが、以降サイトリニューアルができておりませんw</p>
       </div>
-      <small class="copyright">&copy; 2019 - 2022 Qwel Design</small>
-      <div id="coverAnimation" class="coverAnimation"></div>
-    </div>
+    </header>
+    <main id="main" class="main">
+      <div class="main__container">
+        <nav id="gNav" class="gNav">
+          <div class="gNav__inner">
+            <h2 class="gNav__title">Menu</h2>
+            <ul class="gNav__primaryMenu">
+              <li class="gNav__menuItem"><a href="/" aria-current="page">初めての方へ</a></li>
+              <li class="gNav__menuItem"><a href="/pgm/">プログラミング学習</a></li>
+              <li class="gNav__menuItem"><a href="/price/">料金とカリキュラム</a></li>
+              <li class="gNav__menuItem"><a href="/web/">web制作のご依頼</a></li>
+              <li class="gNav__menuItem"><a href="/feature/">特集記事</a></li>
+              <li class="gNav__menuItem"><a href="/profile/">講師紹介</a></li>
+              <li class="gNav__menuItem"><a href="/contact/">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </nav>
+        <article id="page" class="page">
+          <div class="page__inner">
+            <h2 class="page__title">初めての方へ</h2>
+            <h3 class="page__heading">「つくる」喜びを、子どもたちへ</h3>
+            <p>プログラミングは、音楽や造形のように自由で、創造の喜びを味わえる行為です。
+              <br>クヴェルデザインでは、福井市越前海岸エリアを拠点に出張プログラミング教室を開講し、小学生から楽しくプログラミングを体験・学習いただけます。
+              <br>あこがれの模倣や、使う人を想像して作る体験は、やがて「優しさ」とは何なのか、自ら考えることに繋がり、大切なことに感動する「心」を育むことでしょう。
+              <br>さあ、ご一緒にプログラミングをはじめてみませんか？</p>
+            <p>&nbsp;</p>
+            <h3 class="page__heading">プログラミング学習で大切にしていること</h3>
+            <p>当プログラミング教室では、以下の3つのことを大切にします。</p>
+            <div class="page__table">
+              <h4 class="page__tableHead">観察したり、調べたりすること</h4>
+              <p class="page__tableContent">物作りのヒントは、いつでも日常の観察から得られるものです。
+                <br>プログラミングの題材を吟味し、子どもたちの好奇心と興味を、自然と科学や社会に向けさせます。</p>
+              <h4 class="page__tableHead">なるべく自分で絵を描くこと</h4>
+              <p class="page__tableContent">絵を描くことにおっくうな子どももいますが、絵を描くことは子どもの表現力や個性を育みます。
+                <br>描くための観察は、生き物や道具の構造を理解し、真の「知恵」を身に着けることに繋がるのです。</p>
+              <h4 class="page__tableHead">解答例を示さないこと</h4>
+              <p class="page__tableContent">プログラミングは、算数のテストのように、必ず1つの答えが導かれるものではありません。
+                <br>また結果よりも、それを導いた過程を深く見つめることの方が大切でしょう。</p>
+            </div>
+            <p>&nbsp;</p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <div id="coverAnimation" class="coverAnimation"></div>
+    <footer id="footer" class="footer">
+      <small>&copy; 2019 - 2023 QWEL DESIGN</small>
+    </footer>
     <script src="./_sketch.js"></script>
     <script>
       const elem = document.getElementById('coverAnimation')

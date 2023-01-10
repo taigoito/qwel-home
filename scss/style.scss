@@ -1,0 +1,46 @@
+/*
+Theme Name: Qwel Two Beta
+Description: This is a theme for someone's portfolio or blog. You can customize and use.
+Version: 1.0
+Requires PHP: 7.4
+Author: Taigo Ito
+Author URI: https://qwel.design/
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@charset "utf-8";
+
+// Settings
+@import "foundation/colorSystem";
+@import "foundation/gridsystem";
+@import "foundation/typography";
+
+// Mixins
+@import "mixins/button";
+@import "mixins/form";
+@import "mixins/table";
+@import "mixins/type";
+
+// Foundation
+@import "foundation/normalize";
+
+// Layout
+@import "layout/container";
+@import "layout/header";
+@import "layout/siteBrand";
+@import "layout/main";
+@import "layout/gNav";
+@import "layout/page";
+@import "layout/footer";
+
+// Components
+@import "objects/breadcrumb";
+@import "objects/embed";
+@import "objects/form";
+@import "objects/cover";
+
+// Utility
+@import "utilities/flex";
+@import "utilities/flexItem";
+@import "utilities/text";

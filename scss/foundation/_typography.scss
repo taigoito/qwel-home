@@ -1,0 +1,50 @@
+// Typography
+
+// 固有のフォント設定
+$fontFamilySansSerif:  "Noto Sans JP", sans-serif;
+$fontWeightSansSerif:  500;
+
+// フォントサイズ
+$fontSizes:            (
+  sm:                    0.8rem,
+  nr:                    1rem,
+  md:                    1.17rem,
+  lg:                    1.33rem,
+  xl:                    1.5rem,
+  xxl:                   2rem,
+);
+
+// body
+$fontFamilyBase:       $fontFamilySansSerif;
+$fontWeightBase:       $fontWeightSansSerif;
+$lineHeightBase:       1.8;
+$letterSpacingBase:    0;
+
+// セクション
+$sectionMarginTop:     0;
+$sectionMarginBottom:  1.5rem;
+
+// 見出し
+$headingMarginTop:     1.5rem;
+$headingMarginBottom:  .75rem;
+$headingFontFamily:    $fontFamilySansSerif;
+$headingFontWeight:    $fontWeightSansSerif;
+$h1FontSize:           map-get($fontSizes, "xxl");
+$h2FontSize:           map-get($fontSizes, "xl");
+$h3FontSize:           map-get($fontSizes, "lg");
+$h4FontSize:           map-get($fontSizes, "md");
+$h5FontSize:           map-get($fontSizes, "nr"); // bold
+$h6FontSize:           map-get($fontSizes, "sm"); // bold
+
+// 本文
+$textMarginTop:        0;
+$textMarginBottom:     .75rem;
+
+// small (行間、字間を拡げる)
+$smallFontSize:        map-get($fontSizes, "sm");
+$smallLineHeight:      $lineHeightBase * 9 / 8;
+$smallLetterSpacing:   0.04rem;
+
+// リンク文字の装飾
+$linkDecoration:       none;
+$linkHoverDecoration:  underline;
