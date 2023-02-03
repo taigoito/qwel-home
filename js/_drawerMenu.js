@@ -2,10 +2,9 @@
  * Drawer Menu
  * Author: Taigo Ito (https://qwel.design/)
  * Location: Fukui, Japan
- * @package Qwel-Two
  */
 
-class DrawerMenu {
+export default class DrawerMenu {
   
   constructor(options = {}) {
     // 設定

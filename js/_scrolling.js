@@ -4,7 +4,7 @@
  * Location: Fukui, Japan
  */
 
-class Scrolling {
+export default class Scrolling {
 
   constructor(elem) {
     // 各オプション (body要素のdata属性から取得)

@@ -2,6 +2,16 @@
  * Layout - Main
  */
 
+%__title {
+  border-bottom: 1px dotted $bodyColor;
+  letter-spacing: 0.2em;
+}
+
 .main {
-  
+  padding-top: $headerHeight;
+
+  &__container {
+    @include container();
+    @include row(space-around, stretch);
+  }
 }

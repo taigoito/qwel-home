@@ -3,7 +3,6 @@
  */
 
 .footer {
-  padding: space(5);
-  @include background("primary");
+  padding: 3rem 0;
   text-align: center;
 }

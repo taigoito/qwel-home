@@ -10,7 +10,7 @@
 
 html {
   font-size: $rootFontSize;
-  scroll-behavior: smooth;
+  //scroll-behavior: smooth;
   
   @media (max-width: breakpoint("sm") - 0.1) {
     font-size: $fixedFontSize;

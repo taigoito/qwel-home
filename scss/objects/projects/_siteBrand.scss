@@ -1,0 +1,21 @@
+/**
+ * Layout - Site Brand
+ */
+
+.siteBrand {
+  width: 19.5rem;
+  margin: 0;
+  
+  &__small {
+    display: block;
+    margin-left: 0.25em;
+    font-size: 40%;
+    letter-spacing: 0.2em;
+  }
+
+  &__large {
+    display: block;
+    font-size: 100%;
+    letter-spacing: 0.02em;
+  }
+}

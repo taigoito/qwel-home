@@ -1,292 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head prefix="og:http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter Template</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="favicon.ico">
+    <title>クヴェル・デザイン プログラミング教室 - 「つくる」喜びを、子どもたちへ</title>
+    <meta name="description" content="福井市を中心に家庭教師の要領で出張プログラミング教室を開催◆小学生から楽しくプログラミングを体験・学習できます◆さあ、ご一緒にプログラミングをはじめてみませんか？">
+    <meta property="og:site_name" content="クヴェル・デザイン プログラミング教室">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="クヴェル・デザイン プログラミング教室 - 「つくる」喜びを、子どもたちへ">
+    <meta property="og:description" content="福井市を中心に家庭教師の要領で出張プログラミング教室を開催◆小学生から楽しくプログラミングを体験・学習できます◆さあ、ご一緒にプログラミングをはじめてみませんか？">
+    <meta property="og:url" content="https://qwel.design/">
+    <meta property="og:image" content="https://qwel.design/images/ogp_qweldesign.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap">
+    <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
+  <body data-scrolling-offset="108">
     <header id="header" class="header">
-      <div class="header__inner">
-        <nav id="gNav" class="gNav">
-          <div class="gNav__container">
-            <h1 class="gNav__siteBrand">
-              <a href="/">Site Title</a>
-            </h1>
-            <ul class="gNav__primaryMenu --visible_md">
-              <li class="gNav__menuItem"><a href="#feature">feature</a></li>
-              <li class="gNav__menuItem"><a href="#about">about</a></li>
-              <li class="gNav__menuItem"><a href="#service">service</a></li>
-              <li class="gNav__menuItem"><a href="#news">news</a></li>
-              <li class="gNav__menuItem"><a href="#team">team</a></li>
-              <li class="gNav__menuItem"><a href="#access">access</a></li>
-              <li class="gNav__menuItem"><a href="#contact">contact</a></li>
-            </ul>
-            <ul class="gNav__socialMenu --visible_md">
-              <li class="gNav__menuItem --social"><a href="https://twitter.com/"><span data-icon="ei-sc-twitter" data-size="m"></span></a></li>
-              <li class="gNav__menuItem --social"><a href="https://facebook.com/"><span data-icon="ei-sc-facebook" data-size="m"></span></a></li>
-              <li class="gNav__menuItem --social"><a href="https://instagram.com/"><span data-icon="ei-sc-instagram" data-size="m"></span></a></li>
-            </ul>
-          </div>
-        </nav>
+      <div class="header__container">
+        <h1 id="siteBrand" class="siteBrand">
+          <span class="siteBrand__large">プログラミング教室</span>
+          <span class="siteBrand__small">Provided by QWEL DESIGN</span>
+        </h1>
       </div>
     </header>
     <main id="main" class="main">
-      <header id="hero" class="hero">
-        <div class="hero__content">
-          <p>Welcome to our website.</p>
-        </div>
-      </header>
-      <section id="feature" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">feature</h2>
-          <div class="slider --mt_3 --mb_2">
-            <figure class="slider__inner">
-              <figure class="slider__item">
-                <img class="slider__image" src="./img_default.jpg">
-                <figcaption class="slider__caption"><a href="#">feature 1. title here</a></figcaption>
-              </figure>
-              <figure class="slider__item">
-                <img class="slider__image" src="./img_default.jpg">
-                <figcaption class="slider__caption"><a href="#">feature 2. title here</a></figcaption>
-              </figure>
-              <figure class="slider__item">
-                <img class="slider__image" src="./img_default.jpg">
-                <figcaption class="slider__caption"><a href="#">feature 3. title here</a></figcaption>
-              </figure>
-              <figure class="slider__item">
-                <img class="slider__image" src="./img_default.jpg">
-                <figcaption class="slider__caption"><a href="#">feature 4. title here</a></figcaption>
-              </figure>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">about</h2>
-          <div class="section__container">
-            <article class="postItem --single">
-              <figure class="postItem__image">
-                <img src="./img_default.jpg">
-              </figure>
-              <div class="postItem__content">
-                <h3 class="postItem__heading">Mission</h3>
-                <p class="postItem__excerpt">Our mission is ...</p>
-                <div class="postItem__more">
-                  <a class="btn --primary">read more</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section id="service" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">service</h2>
-          <div class="section__container">
-            <div class="postList --grid">
-              <div class="postList__item">
-                <section class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="postList__item">
-                <section class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="postList__item">
-                <section class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="news" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">news</h2>
-          <div class="section__container">
-            <ul class="postList --list">
-              <li class="postList__item">
-                <div class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="postList__item">
-                <div class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="postList__item">
-                <div class="postItem">
-                  <figure class="postItem__image">
-                    <img src="./img_default.jpg">
-                  </figure>
-                  <div class="postItem__content">
-                    <div class="postItem__info">
-                      <div class="postItem__date">2023.01.01</div>
-                      <div class="postItem__terms">
-                        <a href="#">info</a>
-                        <a href="#">news</a>
-                      </div>
-                    </div>
-                    <h3 class="postItem__heading">Article heading here.</h3>
-                    <p class="postItem__excerpt">Today is ...</p>
-                    <div class="postItem__more">
-                      <a href="#">read more &gt;</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+      <div class="main__container">
+        <nav id="gNav" class="gNav">
+          <div class="gNav__inner">
+            <h2 class="gNav__title">Menu</h2>
+            <ul class="gNav__primaryMenu">
+              <li class="gNav__menuItem"><a href="/">初めての方へ</a></li>
+              <li class="gNav__menuItem"><a href="/pgm/">プログラミング学習</a></li>
+              <li class="gNav__menuItem"><a href="/flow/">料金と受講までの流れ</a></li>
+              <li class="gNav__menuItem"><a href="/profile/">講師あいさつ</a></li>
+              <li class="gNav__menuItem"><a href="/feature/">特集記事</a></li>
+              <li class="gNav__menuItem"><a href="/web/">web制作の実績</a></li>
+              <li class="gNav__menuItem"><a href="/local/">地域活動の実績</a></li>
+              <li class="gNav__menuItem"><a href="/contact/" target="_blank">お問い合わせ</a></li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section id="team" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">team</h2>
-          <div class="section__container">
-            <article class="postItem --single">
-              <figure class="postItem__image">
-                <img src="./img_default.jpg">
-              </figure>
-              <div class="postItem__content">
-                <h3 class="postItem__heading">Mission</h3>
-                <p class="postItem__excerpt">Our mission is ...</p>
-                <div class="postItem__more">
-                  <a class="btn --primary">read more</a>
-                </div>
-              </div>
-            </article>
+        </nav>
+        <article id="page" class="page">
+          <div class="page__inner">
+            <h2 class="page__title">初めての方へ</h2>
+            <h3 class="page__heading">「つくる」喜びを、子どもたちへ</h3>
+            <p>プログラミングは、音楽や造形のように自由で、創造の喜びを味わえる行為です。
+              <br>クヴェルデザインでは、福井市越前海岸エリアを拠点に出張プログラミング教室を開講し、小学生から楽しくプログラミングを体験・学習いただけます。
+              <br>あこがれの模倣や、使う人を想像して作る体験は、やがて「優しさ」とは何なのか、自ら考えることに繋がり、大切なことに感動する「心」を育むことでしょう。
+              <br>さあ、ご一緒にプログラミングをはじめてみませんか？</p>
+            <p>&nbsp;</p>
+            <h3 class="page__heading">プログラミング学習で大切にしていること</h3>
+            <p>当プログラミング教室では、以下の3つのことを大切にします。</p>
+            <h4 class="page__term">観察したり、調べたりすること</h4>
+            <p class="page__desc">物作りのヒントは、いつでも日常の観察から得られるものです。
+              <br>プログラミングの題材を吟味し、子どもたちの好奇心と興味を、自然と科学や社会に向けさせます。</p>
+            <h4 class="page__term">なるべく自分で絵を描くこと</h4>
+            <p class="page__desc">絵を描くことにおっくうな子どももいますが、絵を描くことは子どもの表現力や個性を育みます。
+              <br>描くための観察は、生き物や道具の構造を理解し、真の「知恵」を身に着けることに繋がるのです。</p>
+            <h4 class="page__term">解答例を示さないこと</h4>
+            <p class="page__desc">プログラミングは、算数のテストのように、必ず1つの答えが導かれるものではありません。
+              <br>また結果よりも、それを導いた過程を深く見つめることの方が大切でしょう。</p>
+            <p>&nbsp;</p>
+            <h3 class="page__heading">カリキュラム</h3>
+            <p>どんな方でも、お手頃なご料金で、お子様を受講させることができます。
+              <br>初心者の方、歓迎です！まずはお問い合わせください。</p>
+            <h4 class="page__term">入門講座 / アニメーション制作</h4>
+            <p class="page__desc">子どものためのプログラミング学習環境「スクラッチ」を用います。
+              <br>「風」や「雨」など、身近なものからヒントを得て、簡単なアニメーションを制作していきます。
+              <br>初心者の小学3年生以上を対象とした、全12回のコースとなります。</p>
+            <h4 class="page__term">基礎講座 / 2Dゲーム制作</h4>
+            <p class="page__desc">引き続き「スクラッチ」を用いて、「テトリス」のような2Dゲームを制作します。
+              <br>物事をどのように言語で定義していくのか、プログラミングの基礎を学んでいきます。
+              <br>入門講座修了の小学4年生以上を対象とした、全12回のコースとなります。</p>
+            <h4 class="page__term">応用講座 / 物理エンジン制作</h4>
+            <p class="page__desc">Web制作の現場で用いられる本格的なプログラミング言語"JavaScript"を用います。
+              <br>重力や空気抵抗を定義した「物理エンジン」を制作し、本格的な技能の習得を目指します。
+              <br>基礎講座修了の小学6年生以上を対象とした、全18回のコースとなります。</p>
+            <h4 class="page__term">実践講座 / 3Dプロジェクト制作</h4>
+            <p class="page__desc">ゲーム、映像、建築等の分野で活用される3Dプロジェクト制作環境"Unity"を用います。
+              <br>自由な発想から着手し、「作品」としての完成を目指します。
+              <br>応用講座修了の中学2年生以上を対象とした、全18回のコースとなります。</p>
+            <ul class="page__note">
+              <li>対象学年は目安です。学習内容の理解には、個人差が生じます。</li>
+              <li>各コースの学習課題は毎年変わっていきます。</li>
+              <li>よって、コースを修了したお子様がもう1度同じコースを学習しても、理解をより深めます。</li>
+            </ul>
+            <div class="page__pagination">
+              <a class="page__btnNext" href="/pgm/">Next: プログラミング学習</a>
+              <a class="page__btnContact" href="/contact/" target="_blank">お問い合わせ</a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="access" class="section">
-        <div class="section__inner --pb_0">
-          <h2 class="section__heading">access</h2>
-          <div class="embed --mt_4">
-            <iframe src="https://www.google.com/maps/embed"></iframe>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section">
-        <div class="section__inner">
-          <h2 class="section__heading">contact</h2>
-          <div class="section__container --sm">
-            <form class="form">
-              <label>氏名
-                <br><input type="text"></label>
-              <label>メールアドレス
-                <br><input type="email"></label>
-              <label>表題
-                <br><input type="text"></label>
-              <label>お問い合わせ内容
-                <br><textarea rows="8"></textarea></label>
-              <input class="btn --primary" type="submit">
-            </form>
-          </div>
-        </div>
-      </section>
+        </article>
+      </div>
     </main>
-    <div class="cover">
-      <div class="cover__image"></div>
-    </div>
+    <div id="coverAnimation" class="coverAnimation"></div>
     <footer id="footer" class="footer">
-      <small>&copy; 2019 - 2023 QWEL DESIGN
+      <small>&copy; 2019 - 2023 QWEL DESIGN</small>
     </footer>
-    <script src="./js/drawerMenu.js"></script>
-    <script src="./js/embed.js"></script>
-    <script src="./js/evilIcons.js"></script>
-    <script src="./js/fader.js"></script>
-    <script src="./js/preloader.js"></script>
-    <script src="./js/responsiveColor.js"></script>
-    <script src="./js/scrolling.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/init.js"></script>
+    <script src="/init.js" type="module"></script>
   </body>
 </html>

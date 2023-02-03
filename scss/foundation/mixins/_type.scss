@@ -16,14 +16,15 @@
 
 // blockquoteの設定を適用
 @mixin blockquote() {
-  margin-top: $textMarginTop;
-  margin-bottom: $textMarginBottom;
-  padding-left: 1em;
-  border-left: 4px solid $bodyColor;
+  margin: 0 0 0.75em;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  background-color: themeColor("primaryLight");
+  font-style: italic;
+  font-size: 1rem;
 
-  p, cite {
-    font-style: italic;
-    @include smallText();
+  p {
+    margin-bottom: 0.375rem;
   }
 }
 
